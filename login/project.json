@@ -1,0 +1,44 @@
+{
+  "scope": "testing",
+  "name": "login",
+  "version": "0.0.1",
+  "title": "Basic Web Backend Application",
+  "description": "Basic Web Backend application",
+  "template": "template/template.json",
+  "layout": "main-layout",
+  "languages": {
+    "default": "en",
+    "supported": [
+      "en",
+      "es"
+    ]
+  },
+  "modules": {
+    "path": "modules"
+  },
+  "deployment": {
+    "distributions": [
+      {
+        "name": "web",
+        "platform": "web",
+        "environment": "development",
+        "backend": "backend",
+        "ports": {
+          "bundles": 6500,
+          "http": 6501,
+          "inspect": 6502
+        },
+        "default": true
+      },
+      {
+        "name": "backend",
+        "platform": "backend",
+        "environment": "development",
+        "ports": {
+          "bundles": 6503,
+          "server": 6504
+        }
+      }
+    ]
+  }
+}

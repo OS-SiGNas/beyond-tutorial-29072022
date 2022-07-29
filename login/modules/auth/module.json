@@ -1,0 +1,12 @@
+{
+  "name": "auth",
+  "bridge": {
+    "path": "bridge",
+    "files": [
+      "*"
+    ]
+  },
+  "platforms": [
+    "*"
+  ]
+}
